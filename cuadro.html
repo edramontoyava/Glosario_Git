@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio de noticias diversas">
+    <meta name="keywords" content="noticias, política, deportes">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Tarea 4: Glosario</title>
+</head>
+
+<body class="contenedor">
+
+    <header class="Elemento">
+        <h1>Tarea 4: Glosario</h1>
+        <p>comandos de GIT</p>
+    </header>
+
+    <nav>
+        <img src="TecNM.png" class="L1">
+    </nav>
+
+    <main class="Elemento">
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Comando</th>
+                    <th>Descripción</th>
+                    <th>Parámetros</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>git config --global user.name "[nombre-apellido]"</td>
+                    <td>Establecer un nombre que sea identificable para cuando se revise el historial de versiones</td>
+                    <td>--global user.name "[nombre-apellido]"</td>
+                    <td>git config --global user.name "John Doe"</td>
+                </tr>
+                <tr>
+                    <td>git config --global user.email "[email válido]"</td>
+                    <td>Establecer una dirección de correo electrónico que se asociará a cada commit del repositorio</td>
+                    <td>--global user.email "[email válido]"</td>
+                    <td>git config --global user.email "johndoe@example.com"</td>
+                </tr>
+                <tr>
+                    <td>git config --global -e</td>
+                    <td>Fichero con la información de configuración de Git</td>
+                    <td>--global -e</td>
+                    <td>git config --global -e</td>
+                </tr>
+                <tr>
+                    <td>git init</td>
+                    <td>Inicializar un directorio existente como repositorio Git</td>
+                    <td>Ninguno</td>
+                    <td>git init</td>
+                </tr>
+                <tr>
+                    <td>git clone [url]</td>
+                    <td>Recuperar un repositorio completo desde una ubicación alojada a través de una URL</td>
+                    <td>[url]: La URL del repositorio</td>
+                    <td>git clone https://github.com/ejemplo/repo.git</td>
+                </tr>
+                <tr>
+                    <td>git status</td>
+                    <td>Mostrar los archivos modificados en el directorio de trabajo, preparados para su próximo commit</td>
+                    <td>Ninguno</td>
+                    <td>git status</td>
+                </tr>
+                <tr>
+                    <td>git add [fichero]</td>
+                    <td>Añadir un archivo para el próximo commit (escenario)</td>
+                    <td>[fichero]: El nombre del archivo</td>
+                    <td>git add archivo.txt</td>
+                </tr>
+                <tr>
+                    <td>git add -u</td>
+                    <td>Actualiza el índice sólo donde ya tiene una entrada que coincide con <pathpec>.</td>
+                    <td>Ninguno</td>
+                    <td>git add -u</td>
+                </tr>
+                <tr>
+                    <td>git reset [fichero]</td>
+                    <td>Desenvolver un archivo conservando los cambios en el directorio de trabajo</td>
+                    <td>[fichero]: El nombre del archivo</td>
+                    <td>git reset archivo.txt</td>
+                </tr>
+                <tr>
+                    <td>git reset --soft HEAD^</td>
+                    <td>Desenvolver el último commit conservando los cambios en el directorio local</td>
+                    <td>Ninguno</td>
+                    <td>git reset --soft HEAD^</td>
+                </tr>
+                <tr>
+                    <td>git diff</td>
+                    <td>Diferencia de lo que se cambia pero no se pone en escena</td>
+                    <td>Ninguno</td>
+                    <td>git diff</td>
+                </tr>
+                <tr>
+                    <td>git diff --staged</td>
+                    <td>Diferencia de lo que se ha puesto en escena pero aún no se ha hecho commit</td>
+                    <td>Ninguno</td>
+                    <td>git diff --staged</td>
+                </tr>
+                <tr>
+                    <td>git commit -m "[mensaje descriptivo]"</td>
+                    <td>Hacer un nuevo commit con su respecta descripción</td>
+                    <td>[mensaje descriptivo]: Descripción del commit</td>
+                    <td>git commit -m "Añadir nueva función"</td>
+                </tr>
+                <tr>
+                    <td>git branch</td>
+                    <td>Listar las ramas y aparecerá un * al lado de la rama actualmente activa</td>
+                    <td>Ninguno</td>
+                    <td>git branch</td>
+                </tr>
+                <tr>
+                    <td>git branch [nombre de la rama]</td>
+                    <td>Crear una nueva rama en el commit actual</td>
+                    <td>[nombre de la rama]: Nombre de la nueva rama</td>
+                    <td>git branch nueva-rama</td>
+                </tr>
+                <tr>
+                    <td>git checkout -b [nombre de la rama]</td>
+                    <td>Creación y desplazamiento a la rama indicada</td>
+                    <td>[nombre de la rama]: Nombre de la nueva rama</td>
+                    <td>git checkout -b nueva-rama</td>
+                </tr>
+                <tr>
+                    <td>git branch -d [nombre de la rama]</td>
+                    <td>Eliminar la rama indicada</td>
+                    <td>[nombre de la rama]: Nombre de la rama a eliminar</td>
+                    <td>git branch -d rama-a-eliminar</td>
+                </tr>
+                <tr>
+                    <td>git checkout</td>
+                    <td>Cambiar a otra rama y comprobarla en el directorio de trabajo</td>
+                    <td>[nombre de la rama]: Nombre de la rama a cambiar</td>
+                    <td>git checkout otra-rama</td>
+                </tr>
+                <tr>
+                    <td>git checkout -- .</td>
+                    <td>Retomar el estado del último commit</td>
+                    <td>Ninguno</td>
+                    <td>git checkout -- .</td>
+                </tr>
+                <tr>
+                    <td>git merge [rama]</td>
+                    <td>Fusionar el historial de la rama especificada en la actual</td>
+                    <td>[rama]: Nombre de la rama a fusionar</td>
+                    <td>git merge otra-rama</td>
+                </tr>
+                <tr>
+                    <td>git log</td>
+                    <td>Mostrar todos los commits en el historial de la rama actual</td>
+                    <td>Ninguno</td>
+                    <td>git log</td>
+                </tr>
+                <tr>
+                    <td>git log</td>
+                    <td>Mostrar el historial de commits de la rama actualmente activa</td>
+                    <td>Ninguno</td>
+                    <td>git log</td>
+                </tr>
+                <tr>
+                    <td>git log ramaB...ramaA</td>
+                    <td>Mostrar los commits de la ramaA que no están en la rama B</td>
+                    <td>Ninguno</td>
+                    <td>git log ramaA...ramaB</td>
+                </tr>
+                <tr>
+                    <td>git log --follow [file]</td>
+                    <td>Mostrar los commits que cambiaron el archivo, incluso a través de los renombramientos</td>
+                    <td>[file]: Nombre del archivo a seguir</td>
+                    <td>git log --follow archivo.txt</td>
+                </tr>
+                <tr>
+                    <td>git diff ramaB...ramaA</td>
+                    <td>Mostrar la diferencia de lo que hay en la rama A que no está en la rama B</td>
+                    <td>Ninguno</td>
+                    <td>git diff ramaA...ramaB</td>
+                </tr>
+                <tr>
+                    <td>git show [SHA]</td>
+                    <td>Mostrar cualquier objeto en Git en formato legible para el ser humano</td>
+                    <td>[SHA]: Identificador del commit u objeto</td>
+                    <td>git show abc123</td>
+                </tr>
+                <tr>
+                    <td>git rm [fichero]</td>
+                    <td>Eliminar el archivo del proyecto y preparar la eliminación para el commit</td>
+                    <td>[fichero]: El nombre del archivo</td>
+                    <td>git rm archivo.txt</td>
+                </tr>
+                <tr>
+                    <td>git mv [ruta existente] [nueva ruta]</td>
+                    <td>Renombrar un archivo o directorio o cambiar la ruta de un archivo existente y realizar el commit</td>
+                    <td>[ruta existente]: Ruta actual del archivo o directorio<br>[nueva ruta]: Nueva ruta o nombre</td>
+                    <td>git mv carpeta/archivo.txt nueva_carpeta/archivo_renombrado.txt</td>
+                </tr>
+                <tr>
+                    <td>git log --stat -M</td>
+                    <td>Mostrar todos los registros de commit con indicación de las rutas que se han movido</td>
+                    <td>Ninguno</td>
+                    <td>git log --stat -M</td>
+                </tr>
+                <tr>
+                    <td>.gitignore</td>
+                    <td>Guardar un archivo con los patrones deseados como .gitignore</td>
+                    <td>Ninguno</td>
+                    <td>Crea un archivo llamado .gitignore y añade patrones de archivos o directorios a ignorar.</td>
+                </tr>
+                <tr>
+                    <td>git config --global core.excludesfile [fichero]</td>
+                    <td>Git ignora ese fichero para todos los repositorios</td>
+                    <td>--global core.excludesfile [fichero]</td>
+                    <td>git config --global core.excludesfile ~/.gitignore_global</td>
+                </tr>
+                <tr>
+                    <td>git remote add [alias] [url]</td>
+                    <td>Añadir una URL de git como alias</td>
+                    <td>[alias]: Alias del repositorio<br>[url]: La URL del repositorio</td>
+                    <td>git remote add origin https://github.com/ejemplo/repo.git</td>
+                </tr>
+                <tr>
+                    <td>git fetch [alias]</td>
+                    <td>Obtener todas las ramas de ese Git remoto</td>
+                    <td>[alias]: Alias del repositorio remoto</td>
+                    <td>git fetch origin</td>
+                </tr>
+                <tr>
+                    <td>git merge [alias]/[rama]</td>
+                    <td>Fusionar una rama remota en su rama actual para actualizarla</td>
+                    <td>[alias]: Alias del repositorio remoto<br>[rama]: Rama remota a fusionar</td>
+                    <td>git merge origin/master</td>
+                </tr>
+                <tr>
+                    <td>git push [alias] [rama]</td>
+                    <td>Transmitir los commits de la rama local a la rama del repositorio remoto</td>
+                    <td>[alias]: Alias del repositorio remoto<br>[rama]: Rama local a enviar</td>
+                    <td>git push origin master</td>
+                </tr>
+                <tr>
+                    <td>git pull</td>
+                    <td>Obtener y fusionar los commits de la remota a la rama local</td>
+                    <td>Ninguno</td>
+                    <td>git pull</td>
+                </tr>
+                <tr>
+                    <td>git tag</td>
+                    <td>Visualizar todos los tags</td>
+                    <td>Ninguno</td>
+                    <td>git tag</td>
+                </tr>
+                <tr>
+                    <td>git tag -a [ID del tag] -m "[mensaje descriptivo]"</td>
+                    <td>Crear un tag para el último commit realizado con un mensaje enlazado a este tag</td>
+                    <td>[ID del tag]: Nombre del tag<br>[mensaje descriptivo]: Descripción del tag</td>
+                    <td>git tag -a v1.0 -m "Versión 1.0"</td>
+                </tr>
+                <tr>
+                    <td>git tag -a [ID del tag] [hash del commit] -m "[mensaje descriptivo]"</td>
+                    <td>Crear un tag para un commit identificado con su hash</td>
+                    <td>[ID del tag]: Nombre del tag<br>[hash del commit]: Hash del commit<br>[mensaje descriptivo]: Descripción del tag</td>
+                    <td>git tag -a v1.0 abc123 -m "Versión 1.0"</td>
+                </tr>
+                <tr>
+                    <td>git tag -d [ID del tag]</td>
+                    <td>Eliminar el tag específico</td>
+                    <td>[ID del tag]: Nombre del tag a eliminar</td>
+                    <td>git tag -d v1.0</td>
+                </tr>
+                <tr>
+                    <td>git push --tags</td>
+                    <td>Enviar todos los tags al repositorio remoto</td>
+                    <td>Ninguno</td>
+                    <td>git push --tags</td>
+                </tr>
+                <tr>
+                    <td>git rebase [rama]</td>
+                    <td>Aplicar cualquier commit de la rama actual por delante de la especificada</td>
+                    <td>[rama]: Nombre de la rama a la que se desea aplicar el rebase</td>
+                    <td>git rebase main</td>
+                </tr>
+                <tr>
+                    <td>git reset --hard [commit]</td>
+                    <td>Despejar el escenario y reescribir el árbol de trabajo a partir del commit específico</td>
+                    <td>[commit]: Identificador del commit</td>
+                    <td>git reset --hard abc123</td>
+                </tr>
+                <tr>
+                    <td>git stash</td>
+                    <td>Almacenamiento de los cambios realizados en la "pila de almacenamiento", para centrarse en otro campo y volver más adelante al punto anterior</td>
+                    <td>Ninguno</td>
+                    <td>git stash</td>
+                </tr>
+                <tr>
+                    <td>git stash list</td>
+                    <td>Listar el orden de pila de los cambios en los archivos almacenados</td>
+                    <td>Ninguno</td>
+                    <td>git stash list</td>
+                </tr>
+                <tr>
+                    <td>git stash pop</td>
+                    <td>Toma un cambio almacenado, lo elimina de la "pila de almacenamiento" y lo aplica al árbol de trabajo actual</td>
+                    <td>Ninguno</td>
+                    <td>git stash pop</td>
+                </tr>
+                <tr>
+                    <td>git stash drop</td>
+                    <td>Descartar los cambios de la parte superior de la "pila de almacenamiento"</td>
+                    <td>Ninguno</td>
+                    <td>git stash drop</td>
+                </tr>
+                <tr>
+                    <td>git stash clear</td>
+                    <td>Borrar todas las entradas del stash list</td>
+                    <td>Ninguno</td>
+                    <td>git stash clear</td>
+                </tr>
+                <tr>
+                    <td>git stash apply</td>
+                    <td>Restaurar el último registro del stash</td>
+                    <td>Ninguno</td>
+                    <td>git stash apply</td>
+                </tr>
+                <tr>
+                    <td>git stash apply [ID del stash]</td>
+                    <td>Restaurar el stash identificado con su ID (por ejemplo, ID: stash@{0})</td>
+                    <td>[ID del stash]: Identificador del stash</td>
+                    <td>git stash apply stash@{0}</td>
+                </tr>
+                <tr>
+                    <td>git stash save --keep-index</td>
+                    <td>Guardar todos los archivos menos los archivos del stage</td>
+                    <td>Ninguno</td>
+                    <td>git stash save --keep-index</td>
+                </tr>
+                <tr>
+                    <td>git stash save --include-untracked</td>
+                    <td>Incluir todos los archivos, incluso a los que git no da seguimiento</td>
+                    <td>Ninguno</td>
+                    <td>git stash save --include-untracked</td>
+                </tr>
+                <tr>
+                    <td>git stash list --stat</td>
+                    <td>Aparece más información para cada uno de los stash de los registros</td>
+                    <td>Ninguno</td>
+                    <td>git stash list --stat</td>
+                </tr>
+                <tr>
+                    <td>git stash branch [nombre de la rama] [ID-Stash]</td>
+                    <td>Creación de una rama a partir de un stash identificado con su ID</td>
+                    <td>[nombre de la rama]: Nombre de la nueva rama<br>[ID-Stash]: Identificador del stash</td>
+                    <td>git stash branch nueva-rama stash@{0}</td>
+                </tr>
+                <tr>
+                    <td>git stash show</td>
+                    <td>Información detallada del stash</td>
+                    <td>Ninguno</td>
+                    <td>git stash show</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <aside>
+        <img src="tec.png" class="L2">
+    </aside>
+
+    <footer class="Elemento">
+        <p>Autor: Edwin Ramón Montoya Valdez.</p>
+    </footer>
+</body>
+
+</html>
